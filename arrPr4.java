@@ -29,7 +29,7 @@ The number of pairs is 1 (1,2).
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class arrPr4 {
 
     public static int ArrayProblem(int []arr,int k){
        // Write code here
