@@ -40,9 +40,7 @@ class Solution {
            int cnt=0;
            for(int i=0; i<n; i++){
             for(int j=i+1;j<n;j++){
-                int dif=arr[i]-arr[j];
-                int mDif=(dif*dif)/2;
-                if(mDif==k)
+                if(Math.abs(arr[i]-arr[j])==k)
                 cnt++;
 
             } 
