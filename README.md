@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-40+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-41+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-18-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-19-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,14 +22,14 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 40 / 40 Problems Ready
+Progress: [████████████████████████████████████████] 41 / 41 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `11/11`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `5/5`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `3/3`
-- [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `6/6`
+- [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `7/7`
 
 ---
 
@@ -92,6 +92,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Grid manipulation without auxiliary storage | **In-Place Transposition** | $\mathcal{O}(N^2)$ | [`rotateMatrix.java`](./rotateMatrix.java) |
 | Overlapping time ranges, meetings, or segments | **Sorting by Start Time** | $\mathcal{O}(N \log N)$ | [`mergeIntervals.java`](./mergeIntervals.java) |
 | Largest/smallest subarray sum on linear sequence | **Kadane's Greedy Scan** | $\mathcal{O}(N)$ | [`maxSubArray.java`](./maxSubArray.java) |
+| Array jumping / reachability | **Greedy Max Reach** | $\mathcal{O}(N)$ | [`jumpGame.java`](./jumpGame.java) |
 | Elevation bars trapping liquid | **Dual Boundary Pointers** | $\mathcal{O}(N)$ | [`trappingRainWater.java`](./trappingRainWater.java) |
 
 ---
@@ -274,9 +275,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>7. 💡 Greedy, Permutations & Voting (3 Problems)</h3></summary>
+<summary><h3>7. 💡 Greedy, Permutations & Voting (4 Problems)</h3></summary>
 
 > **Pattern Essence:** Local optimal choices lead to global solutions with minimal space overhead.
+
+- [ ] **[Jump Game](./jumpGame.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Maintain a running <code>maxReach</code>. At each index <code>i</code>, if <code>i > maxReach</code>, return false. Otherwise update <code>maxReach = max(maxReach, i + nums[i])</code> and return true if <code>maxReach >= n - 1</code>.
+    </details>
 
 - [ ] **[Maximum Subarray Sum (Kadane's Algorithm)](./maxSubArray.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
