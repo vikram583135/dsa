@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-41+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-42+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-19-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-20-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,13 +22,13 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 41 / 41 Problems Ready
+Progress: [████████████████████████████████████████] 42 / 42 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `11/11`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `5/5`
-- [ ] **Phase 4: 2D Matrix & Intervals** — `3/3`
+- [ ] **Phase 4: 2D Matrix & Intervals** — `4/4`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `7/7`
 
 ---
@@ -90,6 +90,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
 | Grid manipulation without auxiliary storage | **In-Place Transposition** | $\mathcal{O}(N^2)$ | [`rotateMatrix.java`](./rotateMatrix.java) |
+| Zeroing rows/columns in-place | **First Row & Col As Markers** | $\mathcal{O}(M \times N)$ | [`setMatrixZeroes.java`](./setMatrixZeroes.java) |
 | Overlapping time ranges, meetings, or segments | **Sorting by Start Time** | $\mathcal{O}(N \log N)$ | [`mergeIntervals.java`](./mergeIntervals.java) |
 | Largest/smallest subarray sum on linear sequence | **Kadane's Greedy Scan** | $\mathcal{O}(N)$ | [`maxSubArray.java`](./maxSubArray.java) |
 | Array jumping / reachability | **Greedy Max Reach** | $\mathcal{O}(N)$ | [`jumpGame.java`](./jumpGame.java) |
@@ -236,9 +237,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>5. 🔄 2D Matrix & Grids (2 Problems)</h3></summary>
+<summary><h3>5. 🔄 2D Matrix & Grids (3 Problems)</h3></summary>
 
 > **Pattern Essence:** Transform and traverse 2D arrays with constant space in-place manipulation.
+
+- [ ] **[Set Matrix Zeroes](./setMatrixZeroes.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(M \times N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Track whether the first row and first column need to be zeroed with boolean flags. Then use the first row and column as markers for the rest of the matrix. Update cells in a second pass, and finally zero out the first row/column if flagged.
+    </details>
 
 - [ ] **[Rotate Matrix by 90° Clockwise](./rotateMatrix.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N^2)$ time \| $\mathcal{O}(1)$ space
