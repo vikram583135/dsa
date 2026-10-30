@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-42+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-43+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-20-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-21-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 42 / 42 Problems Ready
+Progress: [████████████████████████████████████████] 43 / 43 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `11/11`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `5/5`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `6/6`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `4/4`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `7/7`
 
@@ -87,6 +87,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Sorted array with pairs/triplets | **Two Pointers** | $\mathcal{O}(N)$ or $\mathcal{O}(N^2)$ | [`threeSum.java`](./threeSum.java) |
 | Sorted or monotonic sequence looking for target/peak | **Binary Search** | $\mathcal{O}(\log N)$ | [`searchRotatedSortedArray.java`](./searchRotatedSortedArray.java) |
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
+| Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
 | Grid manipulation without auxiliary storage | **In-Place Transposition** | $\mathcal{O}(N^2)$ | [`rotateMatrix.java`](./rotateMatrix.java) |
@@ -187,7 +188,7 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>3. 🪟 Sliding Window (1 Problem)</h3></summary>
+<summary><h3>3. 🪟 Sliding Window (2 Problems)</h3></summary>
 
 > **Pattern Essence:** Expand and contract dynamic windows to track contiguous substring/subarray properties in single passes.
 
@@ -195,6 +196,12 @@ Quick lookup guide for competitive programming and technical interviews:
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(\min(N, \Sigma))$ space
   - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
     Store the last seen index of each character in a map. When duplicate character <code>c</code> appears in the window, jump <code>left = lastSeen[c] + 1</code>.
+    </details>
+
+- [ ] **[Minimum Size Subarray Sum](./minSubArrayLen.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Expand the window by advancing <code>right</code> and accumulating <code>currentSum</code>. Whenever <code>currentSum >= target</code>, update the minimal length and shrink the window from the left by subtracting <code>nums[left++]</code>.
     </details>
 
 [⬆ Back to Top](#-data-structures--algorithms-dsa-interactive-master-guide)
