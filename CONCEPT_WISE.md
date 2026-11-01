@@ -16,12 +16,12 @@ Each entry links to its standalone Java solution.
 | Prefix Sums, Hashing & Running Aggregates | 4 | `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
 | Intervals & Sorting | 2 | `mergeIntervals`, `insertInterval` |
-| Greedy & Kadane's-Style | 2 | `jumpGame`, `maxSubArray` |
+| Greedy & Kadane's-Style | 3 | `gasStation`, `jumpGame`, `maxSubArray` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 47 problems · 🟢 Easy 24 · 🟡 Medium 22 · 🔴 Hard 1
+**Total:** 48 problems · 🟢 Easy 24 · 🟡 Medium 23 · 🔴 Hard 1
 
 ---
 
@@ -127,6 +127,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`gasStation.java`](./gasStation.java) | 🟡 Medium | O(N) time \| O(1) space | Total check + reset `startIndex` when `currentGas < 0` |
 | [`jumpGame.java`](./jumpGame.java) | 🟡 Medium | O(N) time \| O(1) space | Track `maxReach`; fail if `i > maxReach` |
 | [`maxSubArray.java`](./maxSubArray.java) | 🟡 Medium | O(N) time \| O(1) space | Kadane's: reset `currentSum` on negative runs |
 
@@ -175,8 +176,8 @@ Each entry links to its standalone Java solution.
 | Prefix Sums & Hashing | 1 | 3 | — | 4 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
 | Intervals & Sorting | — | 2 | — | 2 |
-| Greedy & Kadane's | — | 2 | — | 2 |
+| Greedy & Kadane's | — | 3 | — | 3 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **22** | **1** | **47** |
+| **Total** | **24** | **23** | **1** | **48** |
