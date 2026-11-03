@@ -11,7 +11,7 @@ Each entry links to its standalone Java solution.
 | :--- | :---: | :--- |
 | Array Basics & Linear Scans | 11 | `arrPr1`, `secLar`, `lestTwice`, `arrPr2`, `arrPr3`, `arrOp`, `lastOcc`, `lenSer1`, `rot`, `arrAdd`, `arrSub` |
 | Two Pointers & Pair/Triplet Scanning | 8 | `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
-| Binary Search | 3 | `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement` |
+| Binary Search | 4 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement` |
 | Sliding Window | 2 | `longestSubstringWithoutRepeating`, `minSubArrayLen` |
 | Prefix Sums, Hashing & Running Aggregates | 4 | `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 48 problems · 🟢 Easy 24 · 🟡 Medium 23 · 🔴 Hard 1
+**Total:** 49 problems · 🟢 Easy 24 · 🟡 Medium 24 · 🔴 Hard 1
 
 ---
 
@@ -68,6 +68,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`searchRange.java`](./searchRange.java) | 🟡 Medium | O(log N) time \| O(1) space | Dual boundary binary search (find first + find last) |
 | [`searchRotatedSortedArray.java`](./searchRotatedSortedArray.java) | 🟡 Medium | O(log N) time \| O(1) space | One half is always sorted — discard the other |
 | [`search2DMatrix.java`](./search2DMatrix.java) | 🟡 Medium | O(log(M×N)) time \| O(1) space | Map `mid` → `row = mid / N`, `col = mid % N` |
 | [`findPeakElement.java`](./findPeakElement.java) | 🟡 Medium | O(log N) time \| O(1) space | Compare `nums[mid]` vs `nums[mid+1]` |
@@ -171,7 +172,7 @@ Each entry links to its standalone Java solution.
 | :--- | :---: | :---: | :---: | :---: |
 | Array Basics & Linear Scans | 10 | 1 | — | 11 |
 | Two Pointers & Pair/Triplet | 2 | 5 | 1 | 8 |
-| Binary Search | — | 3 | — | 3 |
+| Binary Search | — | 4 | — | 4 |
 | Sliding Window | — | 2 | — | 2 |
 | Prefix Sums & Hashing | 1 | 3 | — | 4 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
@@ -180,4 +181,4 @@ Each entry links to its standalone Java solution.
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **23** | **1** | **48** |
+| **Total** | **24** | **24** | **1** | **49** |
