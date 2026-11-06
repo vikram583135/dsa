@@ -13,7 +13,7 @@ Each entry links to its standalone Java solution.
 | Two Pointers & Pair/Triplet Scanning | 8 | `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
 | Binary Search | 4 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement` |
 | Sliding Window | 2 | `longestSubstringWithoutRepeating`, `minSubArrayLen` |
-| Prefix Sums, Hashing & Running Aggregates | 4 | `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
+| Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
 | Intervals & Sorting | 2 | `mergeIntervals`, `insertInterval` |
 | Greedy & Kadane's-Style | 3 | `gasStation`, `jumpGame`, `maxSubArray` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 49 problems · 🟢 Easy 24 · 🟡 Medium 24 · 🔴 Hard 1
+**Total:** 50 problems · 🟢 Easy 24 · 🟡 Medium 25 · 🔴 Hard 1
 
 ---
 
@@ -92,6 +92,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`groupAnagrams.java`](./groupAnagrams.java) | 🟡 Medium | O(N · K log K) time \| O(N · K) space | Group words by sorted canonical character string |
 | [`subArraySumK.java`](./subArraySumK.java) | 🟡 Medium | O(N) time \| O(N) space | Running sum − K exists in prefix map? |
 | [`longestConsecutive.java`](./longestConsecutive.java) | 🟡 Medium | O(N) time \| O(N) space | HashSet; only start streaks when `num−1` absent |
 | [`productExceptSelf.java`](./productExceptSelf.java) | 🟡 Medium | O(N) time \| O(1) auxiliary space | Prefix pass × suffix pass, no division |
@@ -174,11 +175,11 @@ Each entry links to its standalone Java solution.
 | Two Pointers & Pair/Triplet | 2 | 5 | 1 | 8 |
 | Binary Search | — | 4 | — | 4 |
 | Sliding Window | — | 2 | — | 2 |
-| Prefix Sums & Hashing | 1 | 3 | — | 4 |
+| Prefix Sums & Hashing | 1 | 4 | — | 5 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
 | Intervals & Sorting | — | 2 | — | 2 |
 | Greedy & Kadane's | — | 3 | — | 3 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **24** | **1** | **49** |
+| **Total** | **24** | **25** | **1** | **50** |

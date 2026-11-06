@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-46+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-47+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-24-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-25-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 46 / 46 Problems Ready
+Progress: [████████████████████████████████████████] 47 / 47 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `12/12`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `6/6`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `7/7`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `5/5`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `8/8`
 
@@ -90,6 +90,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
 | Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
+| Grouping anagrams / character frequencies | **Sorted String / Frequency Key** | $\mathcal{O}(N \cdot K \log K)$ | [`groupAnagrams.java`](./groupAnagrams.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
 | Grid manipulation without auxiliary storage | **In-Place Transposition** | $\mathcal{O}(N^2)$ | [`rotateMatrix.java`](./rotateMatrix.java) |
 | Zeroing rows/columns in-place | **First Row & Col As Markers** | $\mathcal{O}(M \times N)$ | [`setMatrixZeroes.java`](./setMatrixZeroes.java) |
@@ -219,9 +220,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>4. ⚡ Prefix Sums & Hashing (4 Problems)</h3></summary>
+<summary><h3>4. ⚡ Prefix Sums & Hashing (5 Problems)</h3></summary>
 
 > **Pattern Essence:** Cumulative aggregations enable $\mathcal{O}(1)$ range queries and frequency-based subarray identification.
+
+- [ ] **[Group Anagrams](./groupAnagrams.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N \cdot K \log K)$ time \| $\mathcal{O}(N \cdot K)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Sort the characters of each string to form a canonical key (e.g., "eat" -> "aet"). Use a <code>HashMap&lt;String, List&lt;String&gt;&gt;</code> to collect all matching words under the same key.
+    </details>
 
 - [ ] **[Subarray Sum Equals K](./subArraySumK.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(N)$ space
