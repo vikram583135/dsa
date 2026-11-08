@@ -10,7 +10,7 @@ Each entry links to its standalone Java solution.
 | Concept | # Problems | Files |
 | :--- | :---: | :--- |
 | Array Basics & Linear Scans | 11 | `arrPr1`, `secLar`, `lestTwice`, `arrPr2`, `arrPr3`, `arrOp`, `lastOcc`, `lenSer1`, `rot`, `arrAdd`, `arrSub` |
-| Two Pointers & Pair/Triplet Scanning | 8 | `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
+| Two Pointers & Pair/Triplet Scanning | 9 | `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
 | Binary Search | 4 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement` |
 | Sliding Window | 2 | `longestSubstringWithoutRepeating`, `minSubArrayLen` |
 | Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 50 problems · 🟢 Easy 24 · 🟡 Medium 25 · 🔴 Hard 1
+**Total:** 51 problems · 🟢 Easy 24 · 🟡 Medium 26 · 🔴 Hard 1
 
 ---
 
@@ -51,6 +51,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`longestPalindrome.java`](./longestPalindrome.java) | 🟡 Medium | O(N²) time \| O(1) space | Expand around center (odd & even palindrome checks) |
 | [`sort012.java`](./sort012.java) | 🟡 Medium | O(N) time \| O(1) space | Dutch National Flag — low/mid/high pointers |
 | [`containerWithMostWater.java`](./containerWithMostWater.java) | 🟡 Medium | O(N) time \| O(1) space | Shrink from both ends; move the shorter line |
 | [`threeSum.java`](./threeSum.java) | 🟡 Medium | O(N²) time \| O(1) space | Sort + fix one element + two-pointer scan |
@@ -172,7 +173,7 @@ Each entry links to its standalone Java solution.
 | Category | Easy | Medium | Hard | Total |
 | :--- | :---: | :---: | :---: | :---: |
 | Array Basics & Linear Scans | 10 | 1 | — | 11 |
-| Two Pointers & Pair/Triplet | 2 | 5 | 1 | 8 |
+| Two Pointers & Pair/Triplet | 2 | 6 | 1 | 9 |
 | Binary Search | — | 4 | — | 4 |
 | Sliding Window | — | 2 | — | 2 |
 | Prefix Sums & Hashing | 1 | 4 | — | 5 |
@@ -182,4 +183,4 @@ Each entry links to its standalone Java solution.
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **25** | **1** | **50** |
+| **Total** | **24** | **26** | **1** | **51** |

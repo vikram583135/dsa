@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-47+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-48+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-25-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-26-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,11 +22,11 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 47 / 47 Problems Ready
+Progress: [████████████████████████████████████████] 48 / 48 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
-- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `12/12`
+- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `13/13`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `7/7`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `5/5`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `8/8`
@@ -85,6 +85,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | If the problem involves... | Consider this Pattern | Target Complexity | Example Problem |
 | :--- | :--- | :---: | :--- |
 | Sorted array with pairs/triplets | **Two Pointers** | $\mathcal{O}(N)$ or $\mathcal{O}(N^2)$ | [`threeSum.java`](./threeSum.java) |
+| Longest palindromic substring | **Expand Around Center Pointers** | $\mathcal{O}(N^2)$ | [`longestPalindrome.java`](./longestPalindrome.java) |
 | Sorted or monotonic sequence looking for target/peak | **Binary Search** | $\mathcal{O}(\log N)$ | [`searchRotatedSortedArray.java`](./searchRotatedSortedArray.java) |
 | First & last occurrence in sorted array | **Dual Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`searchRange.java`](./searchRange.java) |
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
@@ -106,9 +107,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ## 🚀 Interactive Problem Catalog
 
 <details open>
-<summary><h3>1. 🎯 Two Pointers & Multi-Pointers (8 Problems)</h3></summary>
+<summary><h3>1. 🎯 Two Pointers & Multi-Pointers (9 Problems)</h3></summary>
 
 > **Pattern Essence:** Advance two or more indices towards each other or in lockstep to avoid quadratic brute-force loops.
+
+- [ ] **[Longest Palindromic Substring](./longestPalindrome.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N^2)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Treat each position and pair as a potential center (odd and even lengths). Use two pointers expanding outward (<code>left--</code>, <code>right++</code>) as long as characters match, tracking the maximum palindrome length found.
+    </details>
 
 - [ ] **[Sort Array of 0s, 1s, and 2s](./sort012.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
