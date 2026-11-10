@@ -16,12 +16,12 @@ Each entry links to its standalone Java solution.
 | Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
 | Intervals & Sorting | 2 | `mergeIntervals`, `insertInterval` |
-| Greedy & Kadane's-Style | 4 | `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray` |
+| Greedy & Kadane's-Style | 5 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 52 problems · 🟢 Easy 24 · 🟡 Medium 27 · 🔴 Hard 1
+**Total:** 53 problems · 🟢 Easy 24 · 🟡 Medium 28 · 🔴 Hard 1
 
 ---
 
@@ -130,6 +130,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`coinChange.java`](./coinChange.java) | 🟡 Medium | O(N · amount) time \| O(amount) space | Bottom-up DP: `dp[i] = min(dp[i], dp[i - coin] + 1)` |
 | [`houseRobber.java`](./houseRobber.java) | 🟡 Medium | O(N) time \| O(1) space | 1D DP: `current = max(prev1, prev2 + nums[i])` |
 | [`gasStation.java`](./gasStation.java) | 🟡 Medium | O(N) time \| O(1) space | Total check + reset `startIndex` when `currentGas < 0` |
 | [`jumpGame.java`](./jumpGame.java) | 🟡 Medium | O(N) time \| O(1) space | Track `maxReach`; fail if `i > maxReach` |
@@ -180,8 +181,8 @@ Each entry links to its standalone Java solution.
 | Prefix Sums & Hashing | 1 | 4 | — | 5 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
 | Intervals & Sorting | — | 2 | — | 2 |
-| Greedy & Kadane's | — | 4 | — | 4 |
+| Greedy & Kadane's | — | 5 | — | 5 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **27** | **1** | **52** |
+| **Total** | **24** | **28** | **1** | **53** |
