@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-50+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-51+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-28-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-29-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,13 +22,13 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 50 / 50 Problems Ready
+Progress: [████████████████████████████████████████] 51 / 51 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `13/13`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `7/7`
-- [ ] **Phase 4: 2D Matrix & Intervals** — `5/5`
+- [ ] **Phase 4: 2D Matrix & Intervals** — `6/6`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `10/10`
 
 ---
@@ -97,6 +97,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Zeroing rows/columns in-place | **First Row & Col As Markers** | $\mathcal{O}(M \times N)$ | [`setMatrixZeroes.java`](./setMatrixZeroes.java) |
 | Overlapping time ranges, meetings, or segments | **Sorting by Start Time** | $\mathcal{O}(N \log N)$ | [`mergeIntervals.java`](./mergeIntervals.java) |
 | Insert interval into sorted non-overlapping list | **Linear Merge & Scan** | $\mathcal{O}(N)$ | [`insertInterval.java`](./insertInterval.java) |
+| Minimizing interval overlaps / scheduling | **Greedy Sort by End Time** | $\mathcal{O}(N \log N)$ | [`eraseOverlapIntervals.java`](./eraseOverlapIntervals.java) |
 | Largest/smallest subarray sum on linear sequence | **Kadane's Greedy Scan** | $\mathcal{O}(N)$ | [`maxSubArray.java`](./maxSubArray.java) |
 | Non-adjacent element maximization | **1D State Transition DP** | $\mathcal{O}(N)$ | [`houseRobber.java`](./houseRobber.java) |
 | Fewest coins / unbounded knapsack | **Bottom-Up 1D DP** | $\mathcal{O}(N \cdot \text{amount})$ | [`coinChange.java`](./coinChange.java) |
@@ -298,7 +299,7 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>6. ⏱️ Intervals & Sorting (2 Problems)</h3></summary>
+<summary><h3>6. ⏱️ Intervals & Sorting (3 Problems)</h3></summary>
 
 > **Pattern Essence:** Order intervals chronologically to resolve overlap conflicts in linear sweeps.
 
@@ -312,6 +313,12 @@ Quick lookup guide for competitive programming and technical interviews:
   - **Complexity:** $\mathcal{O}(N \log N)$ time \| $\mathcal{O}(N)$ space
   - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
     Sort intervals by start coordinate. If current interval overlaps with previous (<code>prev.end >= curr.start</code>), merge by setting <code>prev.end = max(prev.end, curr.end)</code>.
+    </details>
+
+- [ ] **[Non-overlapping Intervals](./eraseOverlapIntervals.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N \log N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Sort intervals by end time. If <code>intervals[i][0] < prevEnd</code>, an overlap exists—greedily drop the current interval (increment removal count) to maximize remaining space. Otherwise, update <code>prevEnd = intervals[i][1]</code>.
     </details>
 
 [⬆ Back to Top](#-data-structures--algorithms-dsa-interactive-master-guide)

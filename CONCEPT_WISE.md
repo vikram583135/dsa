@@ -15,13 +15,13 @@ Each entry links to its standalone Java solution.
 | Sliding Window | 2 | `longestSubstringWithoutRepeating`, `minSubArrayLen` |
 | Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
-| Intervals & Sorting | 2 | `mergeIntervals`, `insertInterval` |
+| Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
 | Greedy & Kadane's-Style | 5 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 53 problems · 🟢 Easy 24 · 🟡 Medium 28 · 🔴 Hard 1
+**Total:** 54 problems · 🟢 Easy 24 · 🟡 Medium 29 · 🔴 Hard 1
 
 ---
 
@@ -121,6 +121,7 @@ Each entry links to its standalone Java solution.
 | :--- | :---: | :--- | :--- |
 | [`insertInterval.java`](./insertInterval.java) | 🟡 Medium | O(N) time \| O(N) space | Add left + merge overlapping + add right |
 | [`mergeIntervals.java`](./mergeIntervals.java) | 🟡 Medium | O(N log N) time \| O(N) space | Sort by start; merge when `prev.end ≥ curr.start` |
+| [`eraseOverlapIntervals.java`](./eraseOverlapIntervals.java) | 🟡 Medium | O(N log N) time \| O(1) space | Sort by end time; greedily drop overlapping intervals |
 
 ---
 
@@ -180,9 +181,9 @@ Each entry links to its standalone Java solution.
 | Sliding Window | — | 2 | — | 2 |
 | Prefix Sums & Hashing | 1 | 4 | — | 5 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
-| Intervals & Sorting | — | 2 | — | 2 |
+| Intervals & Sorting | — | 3 | — | 3 |
 | Greedy & Kadane's | — | 5 | — | 5 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **28** | **1** | **53** |
+| **Total** | **24** | **29** | **1** | **54** |
