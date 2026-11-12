@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-51+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-52+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-29-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-30-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 51 / 51 Problems Ready
+Progress: [████████████████████████████████████████] 52 / 52 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `13/13`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `7/7`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `8/8`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `6/6`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `10/10`
 
@@ -90,6 +90,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | First & last occurrence in sorted array | **Dual Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`searchRange.java`](./searchRange.java) |
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
 | Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
+| Longest substring with $\le K$ character replacements | **Frequency Counter Sliding Window** | $\mathcal{O}(N)$ | [`characterReplacement.java`](./characterReplacement.java) |
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
 | Grouping anagrams / character frequencies | **Sorted String / Frequency Key** | $\mathcal{O}(N \cdot K \log K)$ | [`groupAnagrams.java`](./groupAnagrams.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
@@ -208,9 +209,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>3. 🪟 Sliding Window (2 Problems)</h3></summary>
+<summary><h3>3. 🪟 Sliding Window (3 Problems)</h3></summary>
 
 > **Pattern Essence:** Expand and contract dynamic windows to track contiguous substring/subarray properties in single passes.
+
+- [ ] **[Longest Repeating Character Replacement](./characterReplacement.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Maintain a 26-size frequency array and <code>maxFreq</code> of any single character in the current window. If <code>(right - left + 1) - maxFreq > k</code>, more than <code>k</code> replacements are needed, so shrink from left by incrementing <code>left</code> and decrementing <code>count[s[left]]</code>.
+    </details>
 
 - [ ] **[Longest Substring Without Repeating Characters](./longestSubstringWithoutRepeating.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(\min(N, \Sigma))$ space
