@@ -16,12 +16,12 @@ Each entry links to its standalone Java solution.
 | Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
-| Greedy & Kadane's-Style | 5 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray` |
+| Greedy & Kadane's-Style | 6 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray`, `maxProfit` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 55 problems · 🟢 Easy 24 · 🟡 Medium 30 · 🔴 Hard 1
+**Total:** 56 problems · 🟢 Easy 25 · 🟡 Medium 30 · 🔴 Hard 1
 
 ---
 
@@ -132,6 +132,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`maxProfit.java`](./maxProfit.java) | 🟢 Easy | O(N) time \| O(1) space | Track `minPrice`; update `maxProfit = max(maxProfit, price - minPrice)` |
 | [`coinChange.java`](./coinChange.java) | 🟡 Medium | O(N · amount) time \| O(amount) space | Bottom-up DP: `dp[i] = min(dp[i], dp[i - coin] + 1)` |
 | [`houseRobber.java`](./houseRobber.java) | 🟡 Medium | O(N) time \| O(1) space | 1D DP: `current = max(prev1, prev2 + nums[i])` |
 | [`gasStation.java`](./gasStation.java) | 🟡 Medium | O(N) time \| O(1) space | Total check + reset `startIndex` when `currentGas < 0` |
@@ -183,8 +184,8 @@ Each entry links to its standalone Java solution.
 | Prefix Sums & Hashing | 1 | 4 | — | 5 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
 | Intervals & Sorting | — | 3 | — | 3 |
-| Greedy & Kadane's | — | 5 | — | 5 |
+| Greedy & Kadane's | 1 | 5 | — | 6 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **24** | **30** | **1** | **55** |
+| **Total** | **25** | **30** | **1** | **56** |
