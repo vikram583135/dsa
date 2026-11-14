@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-53+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-54+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-22-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-30-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-31-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,11 +22,11 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 53 / 53 Problems Ready
+Progress: [████████████████████████████████████████] 54 / 54 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
-- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `13/13`
+- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `14/14`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `8/8`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `6/6`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `11/11`
@@ -87,6 +87,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Sorted array with pairs/triplets | **Two Pointers** | $\mathcal{O}(N)$ or $\mathcal{O}(N^2)$ | [`threeSum.java`](./threeSum.java) |
 | Longest palindromic substring | **Expand Around Center Pointers** | $\mathcal{O}(N^2)$ | [`longestPalindrome.java`](./longestPalindrome.java) |
 | Sorted or monotonic sequence looking for target/peak | **Binary Search** | $\mathcal{O}(\log N)$ | [`searchRotatedSortedArray.java`](./searchRotatedSortedArray.java) |
+| Minimum element in rotated sorted array | **Pivot Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`findMinRotated.java`](./findMinRotated.java) |
 | First & last occurrence in sorted array | **Dual Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`searchRange.java`](./searchRange.java) |
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
 | Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
@@ -176,9 +177,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>2. 🔍 Binary Search (4 Problems)</h3></summary>
+<summary><h3>2. 🔍 Binary Search (5 Problems)</h3></summary>
 
 > **Pattern Essence:** Halve the search domain each iteration on sorted arrays, partitioned spaces, or monotonic answer ranges.
+
+- [ ] **[Find Minimum in Rotated Sorted Array](./findMinRotated.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(\log N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Compare <code>nums[mid]</code> with <code>nums[high]</code>. If <code>nums[mid] > nums[high]</code>, the minimum lies strictly in the right half (<code>low = mid + 1</code>). Otherwise, the right half is sorted and the inflection/minimum is at <code>mid</code> or to its left (<code>high = mid</code>).
+    </details>
 
 - [ ] **[First and Last Position of Element in Sorted Array](./searchRange.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(\log N)$ time \| $\mathcal{O}(1)$ space
