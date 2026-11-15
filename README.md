@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-54+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-55+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-22-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-31-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-32-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 54 / 54 Problems Ready
+Progress: [████████████████████████████████████████] 55 / 55 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `14/14`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `8/8`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `9/9`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `6/6`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `11/11`
 
@@ -92,6 +92,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
 | Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
 | Longest substring with $\le K$ character replacements | **Frequency Counter Sliding Window** | $\mathcal{O}(N)$ | [`characterReplacement.java`](./characterReplacement.java) |
+| Permutation / anagram of string as substring | **Fixed Sliding Window + Match Array** | $\mathcal{O}(N)$ | [`checkInclusion.java`](./checkInclusion.java) |
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
 | Grouping anagrams / character frequencies | **Sorted String / Frequency Key** | $\mathcal{O}(N \cdot K \log K)$ | [`groupAnagrams.java`](./groupAnagrams.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
@@ -217,9 +218,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>3. 🪟 Sliding Window (3 Problems)</h3></summary>
+<summary><h3>3. 🪟 Sliding Window (4 Problems)</h3></summary>
 
 > **Pattern Essence:** Expand and contract dynamic windows to track contiguous substring/subarray properties in single passes.
+
+- [ ] **[Permutation in String](./checkInclusion.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N_1 + N_2)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Maintain frequency counts of <code>s1</code> and a fixed window of size <code>|s1|</code> in <code>s2</code>. Track the number of matching character frequencies (out of 26); slide the window by 1 each step and return <code>true</code> immediately if <code>matches == 26</code>.
+    </details>
 
 - [ ] **[Longest Repeating Character Replacement](./characterReplacement.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space

@@ -12,7 +12,7 @@ Each entry links to its standalone Java solution.
 | Array Basics & Linear Scans | 11 | `arrPr1`, `secLar`, `lestTwice`, `arrPr2`, `arrPr3`, `arrOp`, `lastOcc`, `lenSer1`, `rot`, `arrAdd`, `arrSub` |
 | Two Pointers & Pair/Triplet Scanning | 9 | `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
 | Binary Search | 5 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
-| Sliding Window | 3 | `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement` |
+| Sliding Window | 4 | `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
 | Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 57 problems · 🟢 Easy 25 · 🟡 Medium 31 · 🔴 Hard 1
+**Total:** 58 problems · 🟢 Easy 25 · 🟡 Medium 32 · 🔴 Hard 1
 
 ---
 
@@ -83,6 +83,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`checkInclusion.java`](./checkInclusion.java) | 🟡 Medium | O(N₁ + N₂) time \| O(1) space | Fixed window of size \|s1\| + 26-char frequency match count |
 | [`characterReplacement.java`](./characterReplacement.java) | 🟡 Medium | O(N) time \| O(1) space | Window with `maxFreq`; shrink when `(len - maxFreq) > k` |
 | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) | 🟡 Medium | O(N) time \| O(min(N, Σ)) space | Last-seen map; jump `left = lastSeen[c] + 1` |
 | [`minSubArrayLen.java`](./minSubArrayLen.java) | 🟡 Medium | O(N) time \| O(1) space | Shrink window while `currentSum ≥ target` |
@@ -181,7 +182,7 @@ Each entry links to its standalone Java solution.
 | Array Basics & Linear Scans | 10 | 1 | — | 11 |
 | Two Pointers & Pair/Triplet | 2 | 6 | 1 | 9 |
 | Binary Search | — | 5 | — | 5 |
-| Sliding Window | — | 3 | — | 3 |
+| Sliding Window | — | 4 | — | 4 |
 | Prefix Sums & Hashing | 1 | 4 | — | 5 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
 | Intervals & Sorting | — | 3 | — | 3 |
@@ -189,4 +190,4 @@ Each entry links to its standalone Java solution.
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **25** | **31** | **1** | **57** |
+| **Total** | **25** | **32** | **1** | **58** |
