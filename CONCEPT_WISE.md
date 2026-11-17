@@ -13,7 +13,7 @@ Each entry links to its standalone Java solution.
 | Two Pointers & Pair/Triplet Scanning | 9 | `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
 | Binary Search | 5 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
 | Sliding Window | 4 | `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
-| Prefix Sums, Hashing & Running Aggregates | 5 | `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
+| Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
 | Greedy & Kadane's-Style | 6 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray`, `maxProfit` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 58 problems · 🟢 Easy 25 · 🟡 Medium 32 · 🔴 Hard 1
+**Total:** 59 problems · 🟢 Easy 26 · 🟡 Medium 32 · 🔴 Hard 1
 
 ---
 
@@ -96,6 +96,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`twoSum.java`](./twoSum.java) | 🟢 Easy | O(N) time \| O(N) space | HashMap complement lookup (`target − nums[i]`) |
 | [`groupAnagrams.java`](./groupAnagrams.java) | 🟡 Medium | O(N · K log K) time \| O(N · K) space | Group words by sorted canonical character string |
 | [`subArraySumK.java`](./subArraySumK.java) | 🟡 Medium | O(N) time \| O(N) space | Running sum − K exists in prefix map? |
 | [`longestConsecutive.java`](./longestConsecutive.java) | 🟡 Medium | O(N) time \| O(N) space | HashSet; only start streaks when `num−1` absent |
@@ -183,11 +184,11 @@ Each entry links to its standalone Java solution.
 | Two Pointers & Pair/Triplet | 2 | 6 | 1 | 9 |
 | Binary Search | — | 5 | — | 5 |
 | Sliding Window | — | 4 | — | 4 |
-| Prefix Sums & Hashing | 1 | 4 | — | 5 |
+| Prefix Sums & Hashing | 2 | 4 | — | 6 |
 | 2D Matrix & Grids | — | 3 | — | 3 |
 | Intervals & Sorting | — | 3 | — | 3 |
 | Greedy & Kadane's | 1 | 5 | — | 6 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **25** | **32** | **1** | **58** |
+| **Total** | **26** | **32** | **1** | **59** |

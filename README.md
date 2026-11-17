@@ -3,8 +3,8 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-55+-blue?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-22-brightgreen?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-56+-blue?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-23-brightgreen?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-32-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 55 / 55 Problems Ready
+Progress: [████████████████████████████████████████] 56 / 56 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `14/14`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `9/9`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `10/10`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `6/6`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `11/11`
 
@@ -93,6 +93,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
 | Longest substring with $\le K$ character replacements | **Frequency Counter Sliding Window** | $\mathcal{O}(N)$ | [`characterReplacement.java`](./characterReplacement.java) |
 | Permutation / anagram of string as substring | **Fixed Sliding Window + Match Array** | $\mathcal{O}(N)$ | [`checkInclusion.java`](./checkInclusion.java) |
+| Pair summing to target (indices required) | **Complement Hash Map Lookup** | $\mathcal{O}(N)$ | [`twoSum.java`](./twoSum.java) |
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
 | Grouping anagrams / character frequencies | **Sorted String / Frequency Key** | $\mathcal{O}(N \cdot K \log K)$ | [`groupAnagrams.java`](./groupAnagrams.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
@@ -252,9 +253,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>4. ⚡ Prefix Sums & Hashing (5 Problems)</h3></summary>
+<summary><h3>4. ⚡ Prefix Sums & Hashing (6 Problems)</h3></summary>
 
 > **Pattern Essence:** Cumulative aggregations enable $\mathcal{O}(1)$ range queries and frequency-based subarray identification.
+
+- [ ] **[Two Sum](./twoSum.java)** `🟢 Easy`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(N)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Traverse the array while storing <code>nums[i] -&gt; index</code> in a <code>HashMap</code>. For each element, check if <code>target - nums[i]</code> has already been seen; return the two indices when found.
+    </details>
 
 - [ ] **[Group Anagrams](./groupAnagrams.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N \cdot K \log K)$ time \| $\mathcal{O}(N \cdot K)$ space
