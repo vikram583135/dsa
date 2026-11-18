@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-56+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-57+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-23-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-32-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-33-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,13 +22,13 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 56 / 56 Problems Ready
+Progress: [████████████████████████████████████████] 57 / 57 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `14/14`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `10/10`
-- [ ] **Phase 4: 2D Matrix & Intervals** — `6/6`
+- [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `11/11`
 
 ---
@@ -99,6 +99,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
 | Grid manipulation without auxiliary storage | **In-Place Transposition** | $\mathcal{O}(N^2)$ | [`rotateMatrix.java`](./rotateMatrix.java) |
 | Zeroing rows/columns in-place | **First Row & Col As Markers** | $\mathcal{O}(M \times N)$ | [`setMatrixZeroes.java`](./setMatrixZeroes.java) |
+| Grid path combinations from top-left to bottom-right | **1D Rolling Array DP** | $\mathcal{O}(M \times N)$ | [`uniquePaths.java`](./uniquePaths.java) |
 | Overlapping time ranges, meetings, or segments | **Sorting by Start Time** | $\mathcal{O}(N \log N)$ | [`mergeIntervals.java`](./mergeIntervals.java) |
 | Insert interval into sorted non-overlapping list | **Linear Merge & Scan** | $\mathcal{O}(N)$ | [`insertInterval.java`](./insertInterval.java) |
 | Minimizing interval overlaps / scheduling | **Greedy Sort by End Time** | $\mathcal{O}(N \log N)$ | [`eraseOverlapIntervals.java`](./eraseOverlapIntervals.java) |
@@ -299,9 +300,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>5. 🔄 2D Matrix & Grids (3 Problems)</h3></summary>
+<summary><h3>5. 🔄 2D Matrix & Grids (4 Problems)</h3></summary>
 
 > **Pattern Essence:** Transform and traverse 2D arrays with constant space in-place manipulation.
+
+- [ ] **[Unique Paths](./uniquePaths.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(M \times N)$ time \| $\mathcal{O}(N)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Initialize a 1D array <code>dp</code> of size $N$ with 1s. For each row from 1 to $M-1$, update each cell <code>dp[j] += dp[j - 1]</code> (representing paths from the top plus paths from the left).
+    </details>
 
 - [ ] **[Set Matrix Zeroes](./setMatrixZeroes.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(M \times N)$ time \| $\mathcal{O}(1)$ space

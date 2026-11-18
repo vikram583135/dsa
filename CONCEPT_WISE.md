@@ -14,14 +14,14 @@ Each entry links to its standalone Java solution.
 | Binary Search | 5 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
 | Sliding Window | 4 | `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
-| 2D Matrix & Grids | 3 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix` |
+| 2D Matrix & Grids | 4 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix`, `uniquePaths` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
 | Greedy & Kadane's-Style | 6 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray`, `maxProfit` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 59 problems · 🟢 Easy 26 · 🟡 Medium 32 · 🔴 Hard 1
+**Total:** 60 problems · 🟢 Easy 26 · 🟡 Medium 33 · 🔴 Hard 1
 
 ---
 
@@ -111,6 +111,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`uniquePaths.java`](./uniquePaths.java) | 🟡 Medium | O(M×N) time \| O(N) space | 1D rolling array DP: `dp[j] += dp[j−1]` |
 | [`setMatrixZeroes.java`](./setMatrixZeroes.java) | 🟡 Medium | O(M×N) time \| O(1) space | First row/col as markers + flags |
 | [`rotateMatrix.java`](./rotateMatrix.java) | 🟡 Medium | O(N²) time \| O(1) space | Transpose → reverse each row |
 | [`spiralMatrix.java`](./spiralMatrix.java) | 🟡 Medium | O(M×N) time \| O(1) space | top/bottom/left/right boundary traversal |
@@ -185,10 +186,10 @@ Each entry links to its standalone Java solution.
 | Binary Search | — | 5 | — | 5 |
 | Sliding Window | — | 4 | — | 4 |
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
-| 2D Matrix & Grids | — | 3 | — | 3 |
+| 2D Matrix & Grids | — | 4 | — | 4 |
 | Intervals & Sorting | — | 3 | — | 3 |
 | Greedy & Kadane's | 1 | 5 | — | 6 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **26** | **32** | **1** | **59** |
+| **Total** | **26** | **33** | **1** | **60** |
