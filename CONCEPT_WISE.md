@@ -16,12 +16,12 @@ Each entry links to its standalone Java solution.
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 4 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix`, `uniquePaths` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
-| Greedy & Kadane's-Style | 6 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `maxSubArray`, `maxProfit` |
+| Greedy & Kadane's-Style | 7 | `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `jumpGame2`, `maxSubArray`, `maxProfit` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 60 problems · 🟢 Easy 26 · 🟡 Medium 33 · 🔴 Hard 1
+**Total:** 61 problems · 🟢 Easy 26 · 🟡 Medium 34 · 🔴 Hard 1
 
 ---
 
@@ -141,6 +141,7 @@ Each entry links to its standalone Java solution.
 | [`houseRobber.java`](./houseRobber.java) | 🟡 Medium | O(N) time \| O(1) space | 1D DP: `current = max(prev1, prev2 + nums[i])` |
 | [`gasStation.java`](./gasStation.java) | 🟡 Medium | O(N) time \| O(1) space | Total check + reset `startIndex` when `currentGas < 0` |
 | [`jumpGame.java`](./jumpGame.java) | 🟡 Medium | O(N) time \| O(1) space | Track `maxReach`; fail if `i > maxReach` |
+| [`jumpGame2.java`](./jumpGame2.java) | 🟡 Medium | O(N) time \| O(1) space | Greedy BFS levels; jump when `i == currentEnd` |
 | [`maxSubArray.java`](./maxSubArray.java) | 🟡 Medium | O(N) time \| O(1) space | Kadane's: reset `currentSum` on negative runs |
 
 ---
@@ -188,8 +189,8 @@ Each entry links to its standalone Java solution.
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
 | 2D Matrix & Grids | — | 4 | — | 4 |
 | Intervals & Sorting | — | 3 | — | 3 |
-| Greedy & Kadane's | 1 | 5 | — | 6 |
+| Greedy & Kadane's | 1 | 6 | — | 7 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **26** | **33** | **1** | **60** |
+| **Total** | **26** | **34** | **1** | **61** |
