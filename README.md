@@ -3,8 +3,8 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-58+-blue?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-23-brightgreen?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-59+-blue?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-24-brightgreen?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-34-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -22,11 +22,11 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 58 / 58 Problems Ready
+Progress: [████████████████████████████████████████] 59 / 59 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
-- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `14/14`
+- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `15/15`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `10/10`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `12/12`
@@ -85,6 +85,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | If the problem involves... | Consider this Pattern | Target Complexity | Example Problem |
 | :--- | :--- | :---: | :--- |
 | Sorted array with pairs/triplets | **Two Pointers** | $\mathcal{O}(N)$ or $\mathcal{O}(N^2)$ | [`threeSum.java`](./threeSum.java) |
+| Palindrome verification ignoring non-alphanumeric | **Inward Two Pointers** | $\mathcal{O}(N)$ | [`validPalindrome.java`](./validPalindrome.java) |
 | Longest palindromic substring | **Expand Around Center Pointers** | $\mathcal{O}(N^2)$ | [`longestPalindrome.java`](./longestPalindrome.java) |
 | Sorted or monotonic sequence looking for target/peak | **Binary Search** | $\mathcal{O}(\log N)$ | [`searchRotatedSortedArray.java`](./searchRotatedSortedArray.java) |
 | Minimum element in rotated sorted array | **Pivot Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`findMinRotated.java`](./findMinRotated.java) |
@@ -117,9 +118,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ## 🚀 Interactive Problem Catalog
 
 <details open>
-<summary><h3>1. 🎯 Two Pointers & Multi-Pointers (9 Problems)</h3></summary>
+<summary><h3>1. 🎯 Two Pointers & Multi-Pointers (10 Problems)</h3></summary>
 
 > **Pattern Essence:** Advance two or more indices towards each other or in lockstep to avoid quadratic brute-force loops.
+
+- [ ] **[Valid Palindrome](./validPalindrome.java)** `🟢 Easy`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Use two pointers from both ends (<code>left</code> and <code>right</code>). Skip non-alphanumeric characters with <code>Character.isLetterOrDigit()</code>, and compare lowercase characters. Return <code>false</code> on any mismatch.
+    </details>
 
 - [ ] **[Longest Palindromic Substring](./longestPalindrome.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N^2)$ time \| $\mathcal{O}(1)$ space

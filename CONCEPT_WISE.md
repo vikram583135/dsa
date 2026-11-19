@@ -10,7 +10,7 @@ Each entry links to its standalone Java solution.
 | Concept | # Problems | Files |
 | :--- | :---: | :--- |
 | Array Basics & Linear Scans | 11 | `arrPr1`, `secLar`, `lestTwice`, `arrPr2`, `arrPr3`, `arrOp`, `lastOcc`, `lenSer1`, `rot`, `arrAdd`, `arrSub` |
-| Two Pointers & Pair/Triplet Scanning | 9 | `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
+| Two Pointers & Pair/Triplet Scanning | 10 | `validPalindrome`, `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
 | Binary Search | 5 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
 | Sliding Window | 4 | `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 61 problems · 🟢 Easy 26 · 🟡 Medium 34 · 🔴 Hard 1
+**Total:** 62 problems · 🟢 Easy 27 · 🟡 Medium 34 · 🔴 Hard 1
 
 ---
 
@@ -51,6 +51,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`validPalindrome.java`](./validPalindrome.java) | 🟢 Easy | O(N) time \| O(1) space | Inward two pointers; skip non-alphanumeric |
 | [`longestPalindrome.java`](./longestPalindrome.java) | 🟡 Medium | O(N²) time \| O(1) space | Expand around center (odd & even palindrome checks) |
 | [`sort012.java`](./sort012.java) | 🟡 Medium | O(N) time \| O(1) space | Dutch National Flag — low/mid/high pointers |
 | [`containerWithMostWater.java`](./containerWithMostWater.java) | 🟡 Medium | O(N) time \| O(1) space | Shrink from both ends; move the shorter line |
@@ -183,7 +184,7 @@ Each entry links to its standalone Java solution.
 | Category | Easy | Medium | Hard | Total |
 | :--- | :---: | :---: | :---: | :---: |
 | Array Basics & Linear Scans | 10 | 1 | — | 11 |
-| Two Pointers & Pair/Triplet | 2 | 6 | 1 | 9 |
+| Two Pointers & Pair/Triplet | 3 | 6 | 1 | 10 |
 | Binary Search | — | 5 | — | 5 |
 | Sliding Window | — | 4 | — | 4 |
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
@@ -193,4 +194,4 @@ Each entry links to its standalone Java solution.
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **26** | **34** | **1** | **61** |
+| **Total** | **27** | **34** | **1** | **62** |
