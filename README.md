@@ -3,10 +3,10 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-60+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-61+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-25-brightgreen?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-34-yellow?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-1-red?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-2-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
 **A structured, pattern-based repository of DSA implementations in Java with time/space complexities, intuitive walkthroughs, and an interactive study tracker.**
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 60 / 60 Problems Ready
+Progress: [████████████████████████████████████████] 61 / 61 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `15/15`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `10/10`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `11/11`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `13/13`
 
@@ -92,6 +92,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | First & last occurrence in sorted array | **Dual Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`searchRange.java`](./searchRange.java) |
 | Contiguous substring or subarray with constraints | **Sliding Window** | $\mathcal{O}(N)$ | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) |
 | Minimal length subarray with sum $\ge$ target | **Dynamic Sliding Window** | $\mathcal{O}(N)$ | [`minSubArrayLen.java`](./minSubArrayLen.java) |
+| Minimum window containing all target characters | **Sliding Window + Character Frequency Match** | $\mathcal{O}(M + N)$ | [`minWindow.java`](./minWindow.java) |
 | Longest substring with $\le K$ character replacements | **Frequency Counter Sliding Window** | $\mathcal{O}(N)$ | [`characterReplacement.java`](./characterReplacement.java) |
 | Permutation / anagram of string as substring | **Fixed Sliding Window + Match Array** | $\mathcal{O}(N)$ | [`checkInclusion.java`](./checkInclusion.java) |
 | Pair summing to target (indices required) | **Complement Hash Map Lookup** | $\mathcal{O}(N)$ | [`twoSum.java`](./twoSum.java) |
@@ -229,9 +230,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>3. 🪟 Sliding Window (4 Problems)</h3></summary>
+<summary><h3>3. 🪟 Sliding Window (5 Problems)</h3></summary>
 
 > **Pattern Essence:** Expand and contract dynamic windows to track contiguous substring/subarray properties in single passes.
+
+- [ ] **[Minimum Window Substring](./minWindow.java)** `🔴 Hard`
+  - **Complexity:** $\mathcal{O}(M + N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Expand <code>right</code> while accumulating character frequencies until all distinct characters in $t$ are covered (<code>formed == required</code>). Then contract from <code>left</code> to find the minimal window while maintaining coverage.
+    </details>
 
 - [ ] **[Permutation in String](./checkInclusion.java)** `🟡 Medium`
   - **Complexity:** $\mathcal{O}(N_1 + N_2)$ time \| $\mathcal{O}(1)$ space

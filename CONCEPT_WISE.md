@@ -12,7 +12,7 @@ Each entry links to its standalone Java solution.
 | Array Basics & Linear Scans | 11 | `arrPr1`, `secLar`, `lestTwice`, `arrPr2`, `arrPr3`, `arrOp`, `lastOcc`, `lenSer1`, `rot`, `arrAdd`, `arrSub` |
 | Two Pointers & Pair/Triplet Scanning | 10 | `validPalindrome`, `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
 | Binary Search | 5 | `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
-| Sliding Window | 4 | `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
+| Sliding Window | 5 | `minWindow`, `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 4 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix`, `uniquePaths` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 63 problems · 🟢 Easy 28 · 🟡 Medium 34 · 🔴 Hard 1
+**Total:** 64 problems · 🟢 Easy 28 · 🟡 Medium 34 · 🔴 Hard 2
 
 ---
 
@@ -84,6 +84,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`minWindow.java`](./minWindow.java) | 🔴 Hard | O(M + N) time \| O(1) space | Expand to cover target freq → contract left to minimize |
 | [`checkInclusion.java`](./checkInclusion.java) | 🟡 Medium | O(N₁ + N₂) time \| O(1) space | Fixed window of size \|s1\| + 26-char frequency match count |
 | [`characterReplacement.java`](./characterReplacement.java) | 🟡 Medium | O(N) time \| O(1) space | Window with `maxFreq`; shrink when `(len - maxFreq) > k` |
 | [`longestSubstringWithoutRepeating.java`](./longestSubstringWithoutRepeating.java) | 🟡 Medium | O(N) time \| O(min(N, Σ)) space | Last-seen map; jump `left = lastSeen[c] + 1` |
@@ -187,7 +188,7 @@ Each entry links to its standalone Java solution.
 | Array Basics & Linear Scans | 10 | 1 | — | 11 |
 | Two Pointers & Pair/Triplet | 3 | 6 | 1 | 10 |
 | Binary Search | — | 5 | — | 5 |
-| Sliding Window | — | 4 | — | 4 |
+| Sliding Window | — | 4 | 1 | 5 |
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
 | 2D Matrix & Grids | — | 4 | — | 4 |
 | Intervals & Sorting | — | 3 | — | 3 |
@@ -195,4 +196,4 @@ Each entry links to its standalone Java solution.
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **28** | **34** | **1** | **63** |
+| **Total** | **28** | **34** | **2** | **64** |
