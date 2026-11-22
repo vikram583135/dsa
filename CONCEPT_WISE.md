@@ -16,12 +16,12 @@ Each entry links to its standalone Java solution.
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 4 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix`, `uniquePaths` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
-| Greedy & Kadane's-Style | 8 | `climbStairs`, `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `jumpGame2`, `maxSubArray`, `maxProfit` |
+| Greedy & Kadane's-Style | 9 | `minCostClimbingStairs`, `climbStairs`, `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `jumpGame2`, `maxSubArray`, `maxProfit` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 64 problems · 🟢 Easy 28 · 🟡 Medium 34 · 🔴 Hard 2
+**Total:** 65 problems · 🟢 Easy 29 · 🟡 Medium 34 · 🔴 Hard 2
 
 ---
 
@@ -138,6 +138,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`minCostClimbingStairs.java`](./minCostClimbingStairs.java) | 🟢 Easy | O(N) time \| O(1) space | Minimum cost to reach each step from the preceding two |
 | [`climbStairs.java`](./climbStairs.java) | 🟢 Easy | O(N) time \| O(1) space | Fibonacci 1D DP: `curr = prev1 + prev2` |
 | [`maxProfit.java`](./maxProfit.java) | 🟢 Easy | O(N) time \| O(1) space | Track `minPrice`; update `maxProfit = max(maxProfit, price - minPrice)` |
 | [`coinChange.java`](./coinChange.java) | 🟡 Medium | O(N · amount) time \| O(amount) space | Bottom-up DP: `dp[i] = min(dp[i], dp[i - coin] + 1)` |
@@ -192,8 +193,8 @@ Each entry links to its standalone Java solution.
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
 | 2D Matrix & Grids | — | 4 | — | 4 |
 | Intervals & Sorting | — | 3 | — | 3 |
-| Greedy & Kadane's | 2 | 6 | — | 8 |
+| Greedy & Kadane's | 3 | 6 | — | 9 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **28** | **34** | **2** | **64** |
+| **Total** | **29** | **34** | **2** | **65** |

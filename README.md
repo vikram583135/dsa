@@ -3,8 +3,8 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-61+-blue?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-25-brightgreen?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-62+-blue?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-26-brightgreen?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-34-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -22,14 +22,14 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 61 / 61 Problems Ready
+Progress: [████████████████████████████████████████] 62 / 62 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `15/15`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `15/15`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `11/11`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
-- [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `13/13`
+- [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `14/14`
 
 ---
 
@@ -107,6 +107,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Minimizing interval overlaps / scheduling | **Greedy Sort by End Time** | $\mathcal{O}(N \log N)$ | [`eraseOverlapIntervals.java`](./eraseOverlapIntervals.java) |
 | Best time to buy & sell stock (single pass) | **Greedy Running Minimum** | $\mathcal{O}(N)$ | [`maxProfit.java`](./maxProfit.java) |
 | Largest/smallest subarray sum on linear sequence | **Kadane's Greedy Scan** | $\mathcal{O}(N)$ | [`maxSubArray.java`](./maxSubArray.java) |
+| Minimum cost to climb stairs | **Rolling 1D DP** | $\mathcal{O}(N)$ | [`minCostClimbingStairs.java`](./minCostClimbingStairs.java) |
 | Step combinations with 1 or 2 step choices | **1D Fibonacci State Transition DP** | $\mathcal{O}(N)$ | [`climbStairs.java`](./climbStairs.java) |
 | Non-adjacent element maximization | **1D State Transition DP** | $\mathcal{O}(N)$ | [`houseRobber.java`](./houseRobber.java) |
 | Fewest coins / unbounded knapsack | **Bottom-Up 1D DP** | $\mathcal{O}(N \cdot \text{amount})$ | [`coinChange.java`](./coinChange.java) |
@@ -379,9 +380,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>7. 💡 Greedy, Dynamic Programming & Permutations (10 Problems)</h3></summary>
+<summary><h3>7. 💡 Greedy, Dynamic Programming & Permutations (11 Problems)</h3></summary>
 
 > **Pattern Essence:** Local optimal choices lead to global solutions with minimal space overhead.
+
+- [ ] **[Minimum Cost Climbing Stairs](./minCostClimbingStairs.java)** `🟢 Easy`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    The cheapest way to reach each step comes from one or two steps below. Keep only those two previous costs.
+    </details>
 
 - [ ] **[Climbing Stairs](./climbStairs.java)** `🟢 Easy`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(1)$ space
