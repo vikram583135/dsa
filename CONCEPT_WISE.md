@@ -11,7 +11,7 @@ Each entry links to its standalone Java solution.
 | :--- | :---: | :--- |
 | Array Basics & Linear Scans | 11 | `arrPr1`, `secLar`, `lestTwice`, `arrPr2`, `arrPr3`, `arrOp`, `lastOcc`, `lenSer1`, `rot`, `arrAdd`, `arrSub` |
 | Two Pointers & Pair/Triplet Scanning | 10 | `validPalindrome`, `longestPalindrome`, `sort012`, `containerWithMostWater`, `threeSum`, `fourSum`, `trappingRainWater`, `diffPairs`, `diviSUmPairMain`, `triplet` |
-| Binary Search | 6 | `searchInsert`, `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
+| Binary Search | 7 | `sqrtX`, `searchInsert`, `searchRange`, `searchRotatedSortedArray`, `search2DMatrix`, `findPeakElement`, `findMinRotated` |
 | Sliding Window | 5 | `minWindow`, `longestSubstringWithoutRepeating`, `minSubArrayLen`, `characterReplacement`, `checkInclusion` |
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 4 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix`, `uniquePaths` |
@@ -21,7 +21,7 @@ Each entry links to its standalone Java solution.
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 66 problems · 🟢 Easy 30 · 🟡 Medium 34 · 🔴 Hard 2
+**Total:** 67 problems · 🟢 Easy 31 · 🟡 Medium 34 · 🔴 Hard 2
 
 ---
 
@@ -70,6 +70,7 @@ Each entry links to its standalone Java solution.
 
 | File | Difficulty | Complexity | Essence |
 | :--- | :---: | :--- | :--- |
+| [`sqrtX.java`](./sqrtX.java) | 🟢 Easy | O(log N) time \| O(1) space | Binary search for the largest integer whose square does not exceed N |
 | [`searchInsert.java`](./searchInsert.java) | 🟢 Easy | O(log N) time \| O(1) space | Lower bound binary search for the first value at least the target |
 | [`findMinRotated.java`](./findMinRotated.java) | 🟡 Medium | O(log N) time \| O(1) space | Compare `nums[mid]` vs `nums[high]`; narrow to inflection |
 | [`searchRange.java`](./searchRange.java) | 🟡 Medium | O(log N) time \| O(1) space | Dual boundary binary search (find first + find last) |
@@ -189,7 +190,7 @@ Each entry links to its standalone Java solution.
 | :--- | :---: | :---: | :---: | :---: |
 | Array Basics & Linear Scans | 10 | 1 | — | 11 |
 | Two Pointers & Pair/Triplet | 3 | 6 | 1 | 10 |
-| Binary Search | 1 | 5 | — | 6 |
+| Binary Search | 2 | 5 | — | 7 |
 | Sliding Window | — | 4 | 1 | 5 |
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
 | 2D Matrix & Grids | — | 4 | — | 4 |
@@ -198,4 +199,4 @@ Each entry links to its standalone Java solution.
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **30** | **34** | **2** | **66** |
+| **Total** | **31** | **34** | **2** | **67** |

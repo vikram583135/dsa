@@ -3,8 +3,8 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-63+-blue?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-27-brightgreen?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-64+-blue?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-28-brightgreen?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-34-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -22,11 +22,11 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 63 / 63 Problems Ready
+Progress: [████████████████████████████████████████] 64 / 64 Problems Ready
 ```
 
-- [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `16/16`
-- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `16/16`
+- [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `17/17`
+- [ ] **Phase 2: Core Two-Pointers & Binary Search** — `17/17`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `11/11`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `14/14`
@@ -88,6 +88,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Palindrome verification ignoring non-alphanumeric | **Inward Two Pointers** | $\mathcal{O}(N)$ | [`validPalindrome.java`](./validPalindrome.java) |
 | Longest palindromic substring | **Expand Around Center Pointers** | $\mathcal{O}(N^2)$ | [`longestPalindrome.java`](./longestPalindrome.java) |
 | Sorted or monotonic sequence looking for target/peak | **Binary Search** | $\mathcal{O}(\log N)$ | [`searchRotatedSortedArray.java`](./searchRotatedSortedArray.java) |
+| Integer square root | **Binary Search on the Answer** | $\mathcal{O}(\log N)$ | [`sqrtX.java`](./sqrtX.java) |
 | Insertion position in a sorted array | **Lower Bound Binary Search** | $\mathcal{O}(\log N)$ | [`searchInsert.java`](./searchInsert.java) |
 | Minimum element in rotated sorted array | **Pivot Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`findMinRotated.java`](./findMinRotated.java) |
 | First & last occurrence in sorted array | **Dual Boundary Binary Search** | $\mathcal{O}(\log N)$ | [`searchRange.java`](./searchRange.java) |
@@ -192,9 +193,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>2. 🔍 Binary Search (6 Problems)</h3></summary>
+<summary><h3>2. 🔍 Binary Search (7 Problems)</h3></summary>
 
 > **Pattern Essence:** Halve the search domain each iteration on sorted arrays, partitioned spaces, or monotonic answer ranges.
+
+- [ ] **[Integer Square Root](./sqrtX.java)** `🟢 Easy`
+  - **Complexity:** $\mathcal{O}(\log N)$ time \| $\mathcal{O}(1)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Binary search for the largest integer whose square does not exceed the input. Use a wider integer type for the multiplication.
+    </details>
 
 - [ ] **[Search Insert Position](./searchInsert.java)** `🟢 Easy`
   - **Complexity:** $\mathcal{O}(\log N)$ time \| $\mathcal{O}(1)$ space
