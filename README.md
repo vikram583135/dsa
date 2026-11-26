@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-65+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-66+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-28-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-35-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-36-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,14 +22,14 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 65 / 65 Problems Ready
+Progress: [████████████████████████████████████████] 66 / 66 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `17/17`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `17/17`
 - [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `11/11`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
-- [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `15/15`
+- [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `16/16`
 
 ---
 
@@ -114,6 +114,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Step combinations with 1 or 2 step choices | **1D Fibonacci State Transition DP** | $\mathcal{O}(N)$ | [`climbStairs.java`](./climbStairs.java) |
 | Non-adjacent element maximization | **1D State Transition DP** | $\mathcal{O}(N)$ | [`houseRobber.java`](./houseRobber.java) |
 | Fewest coins / unbounded knapsack | **Bottom-Up 1D DP** | $\mathcal{O}(N \cdot \text{amount})$ | [`coinChange.java`](./coinChange.java) |
+| Longest strictly increasing subsequence | **Patience Sorting + Binary Search** | $\mathcal{O}(N \log N)$ | [`lengthOfLIS.java`](./lengthOfLIS.java) |
 | Array jumping / reachability | **Greedy Max Reach** | $\mathcal{O}(N)$ | [`jumpGame.java`](./jumpGame.java) |
 | Minimum jumps to reach end of array | **Greedy BFS Window Jump** | $\mathcal{O}(N)$ | [`jumpGame2.java`](./jumpGame2.java) |
 | Circular route with fuel & cost | **Greedy Deficit Reset** | $\mathcal{O}(N)$ | [`gasStation.java`](./gasStation.java) |
@@ -395,7 +396,7 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>7. 💡 Greedy, Dynamic Programming & Permutations (12 Problems)</h3></summary>
+<summary><h3>7. 💡 Greedy, Dynamic Programming & Permutations (13 Problems)</h3></summary>
 
 > **Pattern Essence:** Local optimal choices lead to global solutions with minimal space overhead.
 
@@ -421,6 +422,12 @@ Quick lookup guide for competitive programming and technical interviews:
   - **Complexity:** $\mathcal{O}(N \cdot \text{amount})$ time \| $\mathcal{O}(\text{amount})$ space
   - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
     Build an array <code>dp[0..amount]</code> initialized with a sentinel (<code>amount + 1</code>). For each amount <code>i</code> and coin denomination, update <code>dp[i] = min(dp[i], dp[i - coin] + 1)</code>.
+    </details>
+
+- [ ] **[Longest Increasing Subsequence](./lengthOfLIS.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N \log N)$ time \| $\mathcal{O}(N)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Maintain a <code>tails</code> array where <code>tails[k]</code> is the smallest tail of any increasing subsequence of length <code>k + 1</code>. For each element, binary search its insertion position in <code>tails</code> to either extend the longest subsequence or replace an existing tail.
     </details>
 
 - [ ] **[House Robber](./houseRobber.java)** `🟡 Medium`

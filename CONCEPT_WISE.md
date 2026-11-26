@@ -16,12 +16,12 @@ Each entry links to its standalone Java solution.
 | Prefix Sums, Hashing & Running Aggregates | 6 | `twoSum`, `groupAnagrams`, `subArraySumK`, `longestConsecutive`, `productExceptSelf`, `sumArrExpSelf` |
 | 2D Matrix & Grids | 4 | `setMatrixZeroes`, `rotateMatrix`, `spiralMatrix`, `uniquePaths` |
 | Intervals & Sorting | 3 | `mergeIntervals`, `insertInterval`, `eraseOverlapIntervals` |
-| Greedy & Kadane's-Style | 10 | `minCostClimbingStairs`, `climbStairs`, `coinChange`, `gasStation`, `houseRobber`, `jumpGame`, `jumpGame2`, `maxProductSubArray`, `maxSubArray`, `maxProfit` |
+| Greedy & Kadane's-Style | 11 | `minCostClimbingStairs`, `climbStairs`, `coinChange`, `lengthOfLIS`, `gasStation`, `houseRobber`, `jumpGame`, `jumpGame2`, `maxProductSubArray`, `maxSubArray`, `maxProfit` |
 | Voting, Permutation & Combinatorial Tricks | 2 | `majorityElement`, `nextPermutation` |
 | Math & Number Theory | 3 | `isprime`, `armStrNum`, `ncr` |
 | Pattern Printing & Geometry | 6 | `dimPat`, `contCharPat`, `charPat`, `priNum`, `rigAnFib`, `arrBuilding` |
 
-**Total:** 68 problems · 🟢 Easy 31 · 🟡 Medium 35 · 🔴 Hard 2
+**Total:** 69 problems · 🟢 Easy 31 · 🟡 Medium 36 · 🔴 Hard 2
 
 ---
 
@@ -144,6 +144,7 @@ Each entry links to its standalone Java solution.
 | [`climbStairs.java`](./climbStairs.java) | 🟢 Easy | O(N) time \| O(1) space | Fibonacci 1D DP: `curr = prev1 + prev2` |
 | [`maxProfit.java`](./maxProfit.java) | 🟢 Easy | O(N) time \| O(1) space | Track `minPrice`; update `maxProfit = max(maxProfit, price - minPrice)` |
 | [`coinChange.java`](./coinChange.java) | 🟡 Medium | O(N · amount) time \| O(amount) space | Bottom-up DP: `dp[i] = min(dp[i], dp[i - coin] + 1)` |
+| [`lengthOfLIS.java`](./lengthOfLIS.java) | 🟡 Medium | O(N log N) time \| O(N) space | Patience sorting: binary search `tails` array |
 | [`houseRobber.java`](./houseRobber.java) | 🟡 Medium | O(N) time \| O(1) space | 1D DP: `current = max(prev1, prev2 + nums[i])` |
 | [`gasStation.java`](./gasStation.java) | 🟡 Medium | O(N) time \| O(1) space | Total check + reset `startIndex` when `currentGas < 0` |
 | [`jumpGame.java`](./jumpGame.java) | 🟡 Medium | O(N) time \| O(1) space | Track `maxReach`; fail if `i > maxReach` |
@@ -196,8 +197,8 @@ Each entry links to its standalone Java solution.
 | Prefix Sums & Hashing | 2 | 4 | — | 6 |
 | 2D Matrix & Grids | — | 4 | — | 4 |
 | Intervals & Sorting | — | 3 | — | 3 |
-| Greedy & Kadane's | 3 | 7 | — | 10 |
+| Greedy & Kadane's | 3 | 8 | — | 11 |
 | Voting / Permutation Tricks | 1 | 1 | — | 2 |
 | Math & Number Theory | 3 | — | — | 3 |
 | Pattern Printing & Geometry | 6 | — | — | 6 |
-| **Total** | **31** | **35** | **2** | **68** |
+| **Total** | **31** | **36** | **2** | **69** |
