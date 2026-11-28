@@ -3,9 +3,9 @@
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Language-Java_17+-orange?style=for-the-badge&logo=java)
-![Total Problems](https://img.shields.io/badge/Problems_Solved-66+-blue?style=for-the-badge)
+![Total Problems](https://img.shields.io/badge/Problems_Solved-67+-blue?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-28-brightgreen?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-36-yellow?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-37-yellow?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
@@ -22,12 +22,12 @@
 Use the interactive checkboxes below to track your preparation journey. *(You can tick/untick these directly on GitHub!)*
 
 ```text
-Progress: [████████████████████████████████████████] 66 / 66 Problems Ready
+Progress: [████████████████████████████████████████] 67 / 67 Problems Ready
 ```
 
 - [ ] **Phase 1: Basic Mastery** (Math, Patterns, Basic Arrays) — `17/17`
 - [ ] **Phase 2: Core Two-Pointers & Binary Search** — `17/17`
-- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `11/11`
+- [ ] **Phase 3: Prefix Sums, HashMaps & Sliding Window** — `12/12`
 - [ ] **Phase 4: 2D Matrix & Intervals** — `7/7`
 - [ ] **Phase 5: Greedy, Permutations & Hard Challenges** — `16/16`
 
@@ -100,6 +100,7 @@ Quick lookup guide for competitive programming and technical interviews:
 | Pair summing to target (indices required) | **Complement Hash Map Lookup** | $\mathcal{O}(N)$ | [`twoSum.java`](./twoSum.java) |
 | Continuous subarray sums or frequency matching | **Prefix Sum + HashMap** | $\mathcal{O}(N)$ | [`subArraySumK.java`](./subArraySumK.java) |
 | Grouping anagrams / character frequencies | **Sorted String / Frequency Key** | $\mathcal{O}(N \cdot K \log K)$ | [`groupAnagrams.java`](./groupAnagrams.java) |
+| Top K most frequent elements | **HashMap + Frequency Bucket Sort** | $\mathcal{O}(N)$ | [`topKFrequent.java`](./topKFrequent.java) |
 | Unsorted elements where order is not required | **HashSet Lookup** | $\mathcal{O}(N)$ | [`longestConsecutive.java`](./longestConsecutive.java) |
 | Grid manipulation without auxiliary storage | **In-Place Transposition** | $\mathcal{O}(N^2)$ | [`rotateMatrix.java`](./rotateMatrix.java) |
 | Zeroing rows/columns in-place | **First Row & Col As Markers** | $\mathcal{O}(M \times N)$ | [`setMatrixZeroes.java`](./setMatrixZeroes.java) |
@@ -287,9 +288,15 @@ Quick lookup guide for competitive programming and technical interviews:
 ---
 
 <details open>
-<summary><h3>4. ⚡ Prefix Sums & Hashing (6 Problems)</h3></summary>
+<summary><h3>4. ⚡ Prefix Sums & Hashing (7 Problems)</h3></summary>
 
 > **Pattern Essence:** Cumulative aggregations enable $\mathcal{O}(1)$ range queries and frequency-based subarray identification.
+
+- [ ] **[Top K Frequent Elements](./topKFrequent.java)** `🟡 Medium`
+  - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(N)$ space
+  - <details><summary>💡 <b>Quick Hint & Intuition</b></summary>
+    Count element frequencies with a <code>HashMap</code>, then group numbers into frequency buckets <code>buckets[1..N]</code>. Scan buckets from highest frequency downward to collect the top <code>K</code> elements in linear time.
+    </details>
 
 - [ ] **[Two Sum](./twoSum.java)** `🟢 Easy`
   - **Complexity:** $\mathcal{O}(N)$ time \| $\mathcal{O}(N)$ space
